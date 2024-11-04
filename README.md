@@ -12,3 +12,34 @@ requisitos funcionais e RNF001 para requisitos não funcionais, no formato incre
 e com descrições objetivas.
 ### Identificação dos requisitos.
 Como padrão de prioridade vamos utilizar as seguintes notações, ***essencial, importante e desejável.*** Esses padrões servirão para identificar o grão de importância para cada requisito a ser desenvolvido. ***Essencial*** vamos utilizar para identificar que sem esse requisito os sistemas não podem ser instalados ou etapa seguinte do sistema depende desse requisito. Os requisitos ***importantes*** fazem parte do sistema, mas podem ser implementados nas etapas seguintes sem comprometer a instalação do sistema. Os requisitos ***desejáveis*** são aqueles que não comprometem a funcionalidade do sistema, podem ser instalados posteriormente e garantem qualidade, usabilidade e desempenho. Também será utilizado a forma padrão Pf para pessoa física e Pj para pessoa jurídica.
+### Descrição geral do sistema.
+O objetivo desse projeto é desenvolver um sistema para gestão educacional que
+disponibilize aos seus usuários uma plataforma web, onde, possa disponibilizar os
+seguintes requisitos. No cadastro para empresa pessoa jurídica o administrador dever
+informar o cnpj, a inscrição estadual, a inscrição municipal e ramo de atividade da
+empresa. Uma empresa do ramo educacional possui várias filiais e essas filiais devem
+ser identificadas pelo código da unidade, descrições e o responsável pela unidade.
+Todos os departamentos também serão cadastrados e cada departamento terá o seu
+código de identificação, descrição do departamento e o responsável por cada
+departamento. As empresas poderão ter um ou mais telefones cadastrados e no seu
+cadastro deverá conter, número do telefone, o código da cidade, código do país e o
+titular. Cada unidade deve ter seu próprio endereço e serão cadastrados com os
+seguintes dados: cep, rua, bairro, cidade, estado e país. No cadastro para pessoa
+física deve conter a cpf, rg, nome, sobrenome, email, data de nascimento. Uma
+pessoa pode ser um aluno, um professor, um fornecedor ou até mesmo um visitante.
+Caso essa pessoa seja um fornecedor, ele deve ser cadastrado com os seguintes
+atributos, matrícula, data do cadastro, descrição dos produtos, valor do produto e
+tipo do fornecedor. Um fornecedor pode ser uma pessoais física e os seus atributos
+deverão estar contidos no cadastro pessoa física. O fornecedor para estar ativo deve
+fornecer um ou mais produtos e esses produtos devem ser cadastrados e identificados
+pelo código do produto, descrição do produto, valor do produto, validade do produto
+e nome do fabricante. Uma pessoa também pode ser um aluno e, para o cadastro de
+alunos será solicitado cpf, rg, nome, sobrenome, data de nascimento, sexo e data do
+cadastro. O sistema deve permitir que o aluno realize sua matrícula onde, cada aluno
+deve informar; número do cpf, nome do curso, polo, endereço de e-mail, período e
+turma. Os seus dados pessoais devem estar previamente cadastrados no cadastro
+pessoa física. Durante o período de provas os alunos devem agendar suas avaliações
+previamente. As avaliações para serem agendadas devem contar com data da
+avaliação, horário, local, departamento (Sala de aula). A nota obtida deve ser igual ou
+maior que a nota mínima para aprovação do curso. Um professor para fazer parte do quadro de colaboradores deve estar cadastrado e, para realização do cadastro o sistema deve solicitar o número do cpf, data da realização do cadastro, unidade e formação acadêmica.
+
