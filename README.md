@@ -14,14 +14,13 @@ e com descrições objetivas.
 Como padrão de prioridade vamos utilizar as seguintes notações, ***essencial, importante e desejável.*** Esses padrões servirão para identificar o grão de importância para cada requisito a ser desenvolvido. ***Essencial*** vamos utilizar para identificar que sem esse requisito os sistemas não podem ser instalados ou etapa seguinte do sistema depende desse requisito. Os requisitos ***importantes*** fazem parte do sistema, mas podem ser implementados nas etapas seguintes sem comprometer a instalação do sistema. Os requisitos ***desejáveis*** são aqueles que não comprometem a funcionalidade do sistema, podem ser instalados posteriormente e garantem qualidade, usabilidade e desempenho. Também será utilizado a forma padrão Pf para pessoa física e Pj para pessoa jurídica.
 ### Descrição geral do sistema.
 O objetivo desse projeto é desenvolver um sistema para gestão educacional que
-disponibilize aos seus usuários uma plataforma web, onde, possa disponibilizar os
-seguintes requisitos. No cadastro para empresa pessoa jurídica o administrador dever
-informar o cnpj, a inscrição estadual, a inscrição municipal e ramo de atividade da
+disponibilize os seguintes requisitos ao usuários. No ***cadastro para empresa pessoa jurídica*** o administrador dever
+informar o ***cnpj, a inscrição estadual, a inscrição municipal e ramo de atividade*** da
 empresa. Uma empresa do ramo educacional possui várias filiais e essas filiais devem
-ser identificadas pelo código da unidade, descrições e o responsável pela unidade.
-Todos os departamentos também serão cadastrados e cada departamento terá o seu
-código de identificação, descrição do departamento e o responsável por cada
-departamento. As empresas poderão ter um ou mais telefones cadastrados e no seu
+ser identificadas pelo ***código da unidade, descrições e o responsável pela unidade***.
+Todos os ***departamentos*** também serão cadastrados e cada departamento terá o seu
+***código de identificação, descrição do departamento e o responsável por cada
+departamento***. As empresas poderão ter um ou mais telefones cadastrados e no seu
 cadastro deverá conter, número do telefone, o código da cidade, código do país e o
 titular. Cada unidade deve ter seu próprio endereço e serão cadastrados com os
 seguintes dados: cep, rua, bairro, cidade, estado e país. No cadastro para pessoa
