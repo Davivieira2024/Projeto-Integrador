@@ -20,25 +20,25 @@ empresa. Uma empresa do ramo educacional possui várias filiais e essas filiais 
 ser identificadas pelo ***código da unidade, descrições e o responsável pela unidade***.
 Todos os ***departamentos*** também serão cadastrados e cada departamento terá o seu
 ***código de identificação, descrição do departamento e o responsável por cada
-departamento***. As empresas poderão ter um ou mais telefones cadastrados e no seu
-cadastro deverá conter, número do telefone, o código da cidade, código do país e o
-titular. Cada unidade deve ter seu próprio endereço e serão cadastrados com os
-seguintes dados: cep, rua, bairro, cidade, estado e país. No cadastro para pessoa
-física deve conter a cpf, rg, nome, sobrenome, email, data de nascimento. Uma
-pessoa pode ser um aluno, um professor, um fornecedor ou até mesmo um visitante.
-Caso essa pessoa seja um fornecedor, ele deve ser cadastrado com os seguintes
-atributos, matrícula, data do cadastro, descrição dos produtos, valor do produto e
-tipo do fornecedor. Um fornecedor pode ser uma pessoais física e os seus atributos
-deverão estar contidos no cadastro pessoa física. O fornecedor para estar ativo deve
-fornecer um ou mais produtos e esses produtos devem ser cadastrados e identificados
-pelo código do produto, descrição do produto, valor do produto, validade do produto
-e nome do fabricante. Uma pessoa também pode ser um aluno e, para o cadastro de
-alunos será solicitado cpf, rg, nome, sobrenome, data de nascimento, sexo e data do
-cadastro. O sistema deve permitir que o aluno realize sua matrícula onde, cada aluno
-deve informar; número do cpf, nome do curso, polo, endereço de e-mail, período e
-turma. Os seus dados pessoais devem estar previamente cadastrados no cadastro
-pessoa física. Durante o período de provas os alunos devem agendar suas avaliações
-previamente. As avaliações para serem agendadas devem contar com data da
-avaliação, horário, local, departamento (Sala de aula). A nota obtida deve ser igual ou
-maior que a nota mínima para aprovação do curso. Um professor para fazer parte do quadro de colaboradores deve estar cadastrado e, para realização do cadastro o sistema deve solicitar o número do cpf, data da realização do cadastro, unidade e formação acadêmica.
+departamento***. As empresas poderão ter um ou mais ***telefones cadastrados*** e no seu
+cadastro deverá conter, ***número do telefone, o código da cidade, código do país e o
+titular da conta***. Cada ***unidade*** deve ter seu próprio ***endereço que serão cadastrados*** com os
+seguintes dados: ***cep, rua, bairro, cidade, estado e país***. No ***cadastro para pessoa
+física*** deve conter a ***cpf, rg, nome, sobrenome, email e data de nascimento***. Uma
+pessoa pode ser um ***aluno, um professor, um fornecedor ou até mesmo um visitante***.
+Caso essa pessoa seja um ***fornecedor o cadastrado*** deve conter os seguintes
+atributos ***matrícula, data do cadastro, descrição dos produtos, valor do produto e
+tipo do fornecedor***. Um fornecedor pode ser uma pessoais física e os seus atributos
+deverão estar contidos como ***cadastro pessoa física***. O fornecedor para estar ativo deve
+fornecer um ou mais produtos e esses ***produtos devem ser cadastrados*** e identificados
+pelo ***código, descrição do produto, valor do produto, validade do produto
+e nome do fabricante***. Uma pessoa também pode ser um aluno e, para o ***cadastro de
+alunos*** será solicitado ***cpf, rg, nome, sobrenome, data de nascimento, sexo e data do
+cadastro***. O sistema deve permitir que o aluno realize sua ***matrícula*** onde, cada aluno
+deve informar o ***cpf, nome do curso, polo, endereço de e-mail, período e
+turma***. Os seus dados pessoais devem estar previamente cadastrados no ***cadastro
+pessoa física***. Durante o período de provas os alunos devem ***escolher as datas para suas avaliações***
+previamente. Os alunos para ***agendar suas avaliações*** devem informar ***nome da matéria a data da
+avaliação, horário e unidade***. A nota obtida deve ser igual ou
+maior que a nota mínima para aprovação do curso. Um ***professor*** para fazer parte do quadro de colaboradores deve estar ***cadastrado*** e, para realização do ***cadastro de professores*** o sistema deve solicitar o ***número do cpf, data da realização do cadastro, unidade desejada e formação acadêmica***.
 
