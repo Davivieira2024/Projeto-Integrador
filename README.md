@@ -44,18 +44,19 @@ maior que a nota mínima para aprovação do curso. Um ***professor*** para faze
 
 ### Requisitos funcionais do sistema.
 
-| Id     | Description | Prioridade     | 
+| Id     | Descrição | Prioridade     | 
 | ----------- | ----------- |-----------| 
 | RF001   | O sistema deve fornecer um formulário para cadastro para pessoa física  |Essecial|
 | RF002   | O sistema de fornecer um formulário para cadastro para pessoa jurídica  |Essecial|
-| RF003   | O sistema de fornecer um formulário para cadastro para pessoa jurídica  |Essecial|
-| RF004   | O sistema de fornecer um formulário para cadastro para pessoa jurídica  |Essecial|
-| RF005   | O sistema de fornecer um formulário para cadastro para pessoa jurídica  |Essecial|
-| RF006   | O sistema de fornecer um formulário para cadastro para pessoa jurídica  |Essecial|
-| RF007   | O sistema de fornecer um formulário para cadastro para pessoa jurídica  |Essecial|
-| RF008   | O sistema de fornecer um formulário para cadastro para pessoa jurídica  |Essecial|
-| RF009   | O sistema de fornecer um formulário para cadastro para pessoa jurídica  |Essecial|
-| RF010   | O sistema de fornecer um formulário para cadastro para pessoa jurídica  |Essecial|
+| RF003   | O sistema deve fornecer um formulário para cadastro para professores Pf  |Essecial|
+| RF004   | O sistema deve fornecer um formulário para cadastro para professores PJ  |Essecial|
+| RF005   | O sistema deve fornecer um formulário para cadastro de fornecedores Pf  |Essecial|
+| RF006   | O sistema deve fornecer um formulário para cadastro de fornecedores PJ  |Essecial|
+| RF007   | O Sistema deve fornecer um formulário para cadastro de alunos           |Essecial|
+| RF008   | O sistema deve disponibilizar um formulário para cadastro de departamentos |Importante|
+| RF009   | O sistema deve fornecer um formulário para cadastro de produtos  |Importante|
+| RF010   | O sistema deve fornecer um formulário para cadastro de departamentos  |Importante|
+| RF011   | O sistema deve fornecer um formulário para cadastro de endereços  |Importante|
 
 
 
