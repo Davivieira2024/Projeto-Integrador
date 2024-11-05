@@ -11,7 +11,7 @@ Serão utilizados como identificador dos requisitos a forma padão, RF001 para
 requisitos funcionais e RNF001 para requisitos não funcionais, no formato incremental
 e com descrições objetivas.
 ### Identificação dos requisitos.
-Como padrão de prioridade vamos utilizar as seguintes notações, ***essencial, importante e desejável.*** Esses padrões servirão para identificar o grão de importância para cada requisito a ser desenvolvido. ***Essencial*** vamos utilizar para identificar que sem esse requisito os sistemas não podem ser instalados ou etapa seguinte do sistema depende desse requisito. Os requisitos ***importantes*** fazem parte do sistema, mas podem ser implementados nas etapas seguintes sem comprometer a instalação do sistema. Os requisitos ***desejáveis*** são aqueles que não comprometem a funcionalidade do sistema, podem ser instalados posteriormente e garantem qualidade, usabilidade e desempenho. Também será utilizado a forma padrão Pf para pessoa física e Pj para pessoa jurídica.
+Como padrão de prioridade vamos utilizar as seguintes notações, ***essencial, importante e desejável.*** Esses padrões servirão para identificar o grão de importância para cada requisito a ser desenvolvido. ***Essencial*** vamos utilizar para identificar que sem esses requisitos o sistema não pode ser instalado ou a etapa seguinte do sistema dependerá desses requisitos. Os requisitos ***importantes*** fazem parte do sistema, mas podem ser implementados nas etapas seguintes sem comprometer a instalação do sistema. Os requisitos ***desejáveis*** são aqueles que não comprometem a funcionalidade do sistema, podem ser instalados posteriormente e garantem qualidade, usabilidade e desempenho. Também será utilizado a forma padrão Pf para pessoa física e Pj para pessoa jurídica.
 ### Descrição geral do sistema.
 O objetivo desse projeto é desenvolver um sistema para gestão educacional que
 disponibilize os seguintes requisitos ao usuários. No ***cadastro para empresa pessoa jurídica*** o administrador dever
@@ -46,7 +46,7 @@ maior que a nota mínima para aprovação do curso. Um ***professor*** para faze
 
 | Id     | Description | Prioridade     | 
 | ----------- | ----------- |-----------| 
-| Header      | O sistema deve fornecer um formulário para cadastro para pessoa física|Essecial|
-| Paragraph   | Text        |           |
+| RF001   | O sistema deve fornecer um formulário para cadastro para pessoa física  |Essecial|
+| RF002   | O sistema de fornecer um formulário para cadastro para pessoa jurídica  |Essecial|
 
 
