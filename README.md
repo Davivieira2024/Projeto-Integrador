@@ -48,5 +48,14 @@ maior que a nota mínima para aprovação do curso. Um ***professor*** para faze
 | ----------- | ----------- |-----------| 
 | RF001   | O sistema deve fornecer um formulário para cadastro para pessoa física  |Essecial|
 | RF002   | O sistema de fornecer um formulário para cadastro para pessoa jurídica  |Essecial|
+| RF003   | O sistema de fornecer um formulário para cadastro para pessoa jurídica  |Essecial|
+| RF004   | O sistema de fornecer um formulário para cadastro para pessoa jurídica  |Essecial|
+| RF005   | O sistema de fornecer um formulário para cadastro para pessoa jurídica  |Essecial|
+| RF006   | O sistema de fornecer um formulário para cadastro para pessoa jurídica  |Essecial|
+| RF007   | O sistema de fornecer um formulário para cadastro para pessoa jurídica  |Essecial|
+| RF008   | O sistema de fornecer um formulário para cadastro para pessoa jurídica  |Essecial|
+| RF009   | O sistema de fornecer um formulário para cadastro para pessoa jurídica  |Essecial|
+| RF010   | O sistema de fornecer um formulário para cadastro para pessoa jurídica  |Essecial|
+
 
 
