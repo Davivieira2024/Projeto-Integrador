@@ -58,5 +58,19 @@ maior que a nota mínima para aprovação do curso. Um ***professor*** para faze
 | RF010   | O sistema deve fornecer um formulário para cadastro de departamentos  |Importante|
 | RF011   | O sistema deve fornecer um formulário para cadastro de endereços  |Importante|
 
+### Requisitos não funcionais do sistema.
+| Id     | Descrição | Prioridade     | 
+| ----------- | ----------- |-----------| 
+| RNF001   | O sistema deve fornecer um formulário para cadastro para pessoa física  |Essecial|
+| RNF002   | O sistema de fornecer um formulário para cadastro para pessoa jurídica  |Essecial|
+| RNF003   | O sistema deve fornecer um formulário para cadastro para professores Pf  |Essecial|
+| RNF004   | O sistema deve fornecer um formulário para cadastro para professores PJ  |Essecial|
+| RNF005   | O sistema deve fornecer um formulário para cadastro de fornecedores Pf  |Essecial|
+| RNF006   | O sistema deve fornecer um formulário para cadastro de fornecedores PJ  |Essecial|
+| RNF007   | O Sistema deve fornecer um formulário para cadastro de alunos           |Essecial|
+| RNF008   | O sistema deve disponibilizar um formulário para cadastro de departamentos |Importante|
+| RNF009   | O sistema deve fornecer um formulário para cadastro de produtos  |Importante|
+| RNF010   | O sistema deve fornecer um formulário para cadastro de departamentos  |Importante|
+| RNF011   | O sistema deve fornecer um formulário para cadastro de endereços  |Importante|
 
 
