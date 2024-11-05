@@ -42,3 +42,11 @@ previamente. Os alunos para ***agendar suas avaliações*** devem informar ***no
 avaliação, horário e unidade***. A nota obtida deve ser igual ou
 maior que a nota mínima para aprovação do curso. Um ***professor*** para fazer parte do quadro de colaboradores deve estar ***cadastrado*** e, para realização do ***cadastro de professores*** o sistema deve solicitar o ***número do cpf, data da realização do cadastro, unidade desejada e formação acadêmica***.
 
+### Requisitos funcionais do sistema.
+
+| Syntax      | Description |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
+
+
