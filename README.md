@@ -44,9 +44,9 @@ maior que a nota mínima para aprovação do curso. Um ***professor*** para faze
 
 ### Requisitos funcionais do sistema.
 
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
+| ID     | Description | Prioridade     | 
+| ----------- | ----------- |-----------| 
+| Header      | Title       |           |
+| Paragraph   | Text        |           |
 
 
