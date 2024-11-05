@@ -59,18 +59,18 @@ maior que a nota mínima para aprovação do curso. Um ***professor*** para faze
 | RF011   | O sistema deve fornecer um formulário para cadastro de endereços  |Importante|
 
 ### Requisitos não funcionais do sistema.
-| Id     | Descrição | Prioridade     | 
+| Id     | Descrição | Categoria     | 
 | ----------- | ----------- |-----------| 
-| RNF001   | O sistema deve fornecer um formulário para cadastro para pessoa física  |Essecial|
-| RNF002   | O sistema de fornecer um formulário para cadastro para pessoa jurídica  |Essecial|
-| RNF003   | O sistema deve fornecer um formulário para cadastro para professores Pf  |Essecial|
-| RNF004   | O sistema deve fornecer um formulário para cadastro para professores PJ  |Essecial|
-| RNF005   | O sistema deve fornecer um formulário para cadastro de fornecedores Pf  |Essecial|
-| RNF006   | O sistema deve fornecer um formulário para cadastro de fornecedores PJ  |Essecial|
-| RNF007   | O Sistema deve fornecer um formulário para cadastro de alunos           |Essecial|
-| RNF008   | O sistema deve disponibilizar um formulário para cadastro de departamentos |Importante|
-| RNF009   | O sistema deve fornecer um formulário para cadastro de produtos  |Importante|
-| RNF010   | O sistema deve fornecer um formulário para cadastro de departamentos  |Importante|
-| RNF011   | O sistema deve fornecer um formulário para cadastro de endereços  |Importante|
+| RNF001   | Ao efetuar o cadastro o sistema de retornar uma msnsagem informando se o cadastro já existe  |Confiabilidade|
+| RNF002   | O Sistema deve permitir que o usuário utilize a tecla <<TAB>> para inserção de cada campo  |Usuabilidade|
+| RNF003   | O sistema não deve aceitar dados do tipo texto em campo numérico |Usuabilidade|
+| RNF004   | Ao finalizar o cadastro o sistema de retornar uma mensagem de confirmação  |Usuabilidade|
+| RNF005   | Todos os dados trafegados deverão ser encriptados |Segurança|
+| RNF006   | A interface deve ter navegação padronizada, assim como elementos visuais padronizados por guia de estilo  |Usuabilidade|
+| RNF007   | O sistema deve ficar disponível 99,9% do tempo |Confiabilidade|
+| RNF008   | O sistema deve ser capaz de lidar com altas demandas como ocorrem nos meses de Junho e Dezembro |Escalabilidade|
+| RNF009   | O sistema deve permitir que o usuário utilize a tecla <<ENTER>> para confimação dos dados  |Usuabilidade|
+| RNF010   | Após a confirmação dos dados cadastrados o cursor do mouse deve retornar para o campo 01 da tabulação |Usuabilidade|
+| RNF011   | Os capos para CNPJ/CPF devem ser conter formatação e validação   |Segurança|
 
 
