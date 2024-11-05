@@ -44,9 +44,9 @@ maior que a nota mínima para aprovação do curso. Um ***professor*** para faze
 
 ### Requisitos funcionais do sistema.
 
-| ID     | Description | Prioridade     | 
+| Id     | Description | Prioridade     | 
 | ----------- | ----------- |-----------| 
-| Header      | Title       |           |
+| Header      | O sistema deve fornecer um formulário para cadastro para pessoa física|Essecial|
 | Paragraph   | Text        |           |
 
 
