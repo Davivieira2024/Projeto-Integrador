@@ -76,3 +76,5 @@ maior que a nota mínima para aprovação do curso. Um ***professor*** para faze
 ### Diagrama de caso de uso.
 ![](https://images.app.goo.gl/7ofuBkNVnHNBcHrV9)
 
+### Diagrama de classe Uml
+![](DiagramaDeClasse.png)
