@@ -46,33 +46,35 @@ maior que a nota mínima para aprovação do curso. Um ***professor*** para faze
 
 | Id     | Descrição | Prioridade     | 
 | ----------- | ----------- |-----------| 
-| RF001   | O sistema deve fornecer um formulário para cadastro para pessoa física  |Essecial|
-| RF002   | O sistema de fornecer um formulário para cadastro para pessoa jurídica  |Essecial|
-| RF003   | O sistema deve fornecer um formulário para cadastro para professores Pf  |Essecial|
-| RF004   | O sistema deve fornecer um formulário para cadastro para professores PJ  |Essecial|
+| RF001   | O sistema deve fornecer um formulário para cadastro de pessoa física  |Essecial|
+| RF002   | O sistema deve fornecer um formulário para cadastro de pessoa jurídica  |Essecial|
+| RF003   | O sistema deve fornecer um formulário para cadastro de professores Pf  |Essecial|
+| RF004   | O sistema deve fornecer um formulário para cadastro de professores PJ  |Essecial|
 | RF005   | O sistema deve fornecer um formulário para cadastro de fornecedores Pf  |Essecial|
 | RF006   | O sistema deve fornecer um formulário para cadastro de fornecedores PJ  |Essecial|
 | RF007   | O Sistema deve fornecer um formulário para cadastro de alunos           |Essecial|
 | RF008   | O sistema deve disponibilizar um formulário para cadastro de departamentos |Importante|
 | RF009   | O sistema deve fornecer um formulário para cadastro de produtos  |Importante|
-| RF010   | O sistema deve fornecer um formulário para cadastro de departamentos  |Importante|
-| RF011   | O sistema deve fornecer um formulário para cadastro de endereços  |Importante|
-| RF012   | O sistema deve fornecer um formulário de consulta/edição de cadastros |Importante|
+| RF010   | O sistema deve fornecer um formulário para cadastro dos cursos  |Importante|
+| RF011   | O sistema deve fornecer um formulário para cadastro das unidades  |Importante|
+| RF012   | O sistema deve fornecer um formulário para cadastro das disciplinas |Importante|
+| RF013   | O sistema deve fornecer um formulário para cadastro de matrículas |Importante|
 
 ### Requisitos não funcionais e de qualidade do sistema.
 | Id     | Descrição | Categoria     | 
 | ----------- | ----------- |-----------| 
-| RNF001   | Ao efetuar o cadastro o sistema de retornar uma msnsagem informando se o cadastro já existe  |Confiabilidade|
-| RNF002   | O Sistema deve permitir acesso a usuário que não esteja logado  |Usuabilidade|
+| RNF001   | Ao efetuar o cadastro o sistema deve retornar uma mensagem informando para cadastro já existente  |Confiabilidade|
+| RNF002   | O Sistema não deve permitir acesso para usuário que não esteja logado  |Usuabilidade|
 | RNF003   | O sistema não deve aceitar dados do tipo texto em campo numérico |Usuabilidade|
-| RNF004   | Ao finalizar o cadastro o sistema de retornar uma mensagem de confirmação  |Usuabilidade|
+| RNF004   | Ao finalizar o cadastro o sistema deve retornar uma mensagem de confirmação  |Usuabilidade|
 | RNF005   | Todos os dados trafegados deverão ser encriptados |Segurança|
 | RNF006   | A interface deve ter navegação padronizada, assim como elementos visuais padronizados por guia de estilo  |Usuabilidade|
 | RNF007   | O sistema deve ficar disponível 99,9% do tempo |Confiabilidade|
-| RNF008   | O sistema deve ser capaz de lidar com altas demandas como datas para matrículas |Escalabilidade|
+| RNF008   | O sistema deve ser capaz de lidar com altas demandas como datas para matrículas e rematrículas |Escalabilidade|
 | RNF009   | O sistema deve permitir que o usuário utilize a tecla <<ENTER>> para confimação dos dados  |Usuabilidade|
+| RNF010   | O sistema deve permitir que o usuário utilize a tecla <<TAB>> para mudar de campo  |Usuabilidade|
 | RNF010   | Após a confirmação dos dados cadastrados o cursor do mouse deve retornar para o campo inicial |Usuabilidade|
-| RNF011   | Os capos para CNPJ/CPF devem ser conter formatação e validação   |Segurança|
+| RNF011   | Os campos CNPJ/CPF devem conter formatação e validação   |Segurança|
 ### Diagrama de caso de uso.
 ![](CasoDeUsoCadastroUsuarios.png)
 
