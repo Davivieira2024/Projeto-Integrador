@@ -44,8 +44,8 @@ maior que a nota mínima para aprovação do curso. Um ***professor*** para faze
 
 ### Requisitos funcionais do sistema.
 
-| Id     | Descrição | Prioridade     | 
-| ----------- | ----------- |-----------| 
+| Id          | Descrição   | Prioridade | 
+| ----------- | ----------- |----------- | 
 | RF001   | O sistema deve fornecer um formulário para cadastro de pessoa física  |Essecial|
 | RF002   | O sistema deve fornecer um formulário para cadastro de pessoa jurídica  |Essecial|
 | RF003   | O sistema deve fornecer um formulário para cadastro de professores Pf  |Essecial|
@@ -63,7 +63,7 @@ maior que a nota mínima para aprovação do curso. Um ***professor*** para faze
 ### Requisitos não funcionais e de qualidade do sistema.
 | Id     | Descrição | Categoria     | 
 | ----------- | ----------- |-----------| 
-| RNF001   | Caso o cadastro já tenha sido efetuado o sistema de retornar a mensagem "Já existe um cadastro com esse cpf/cnpj"   |Confiabilidade|
+| RNF001   | Caso o cadastro já tenha sido efetuado o sistema deve retornar a mensagem "Já existe um cadastro com esse cpf/cnpj"   |Confiabilidade|
 | RNF002   | O Sistema não deve permitir acesso para usuário que não esteja logado  |Usuabilidade|
 | RNF003   | O sistema não deve aceitar dados do tipo texto em campo numérico |Usuabilidade|
 | RNF004   | Ao finalizar o cadastro o sistema deve retornar uma mensagem de confirmação  |Usuabilidade|
@@ -76,13 +76,16 @@ maior que a nota mínima para aprovação do curso. Um ***professor*** para faze
 | RNF011   | Após a confirmação dos dados cadastrados o cursor do mouse deve retornar para o campo inicial |Usuabilidade|
 | RNF012   | Os campos CNPJ/CPF devem conter formatações e validações  |Segurança|
 
-### Diagrama De Caso De Uso.
+### Diagrama de caso de uso.
 ![](CasoDeUsoCadastroUsuarios.png)
 
-### Diagrama De Classe Uml
+### Diagrama de classe UML
 ![](DiagramaDeClasse.png)
 
-### Caso De Uso.
-
-
-1. test
+### Descrições dos casos de uso.
+| Nome do cenário: Cadastro de pessoa <br> Atores: <br> Pré-condição | [UC001] Cadastro <br> Cliente, Funcionario, Adm <br> Não está cadastrado |
+| :---        |          ---: |
+| ***Fluxo Principal***      |   |
+| 1. O Sistema exibe a tela de cadastro pessoa física <br> 2. O usuário digita o número do Cpf <br> 3. O usuário digita o número do Rg <br> 4. O usuário digita o nome <br> 5. O usuário digita o sobrenome <br> 6. O usuário digita o e-mail <br> 7. O usuário digita a data de nascimento <br> 8. 8. O usuário seleciona o sexo <br>9. 9. O usuário confirma os dados informados <br> 10. O sistema salva os dados <br> 11. O sistema exibe a mensagem (fluxo alternativo 1) | And more |
+| ***Fluxo Alternantivo - Editar dados cadastrados***      |   |
+| 1. O Sistema exibe a tela de cadastro pessoa física <br> 2. O usuário digita o número do Cpf <br> 3. O sistema exibe os dados cadastrados <br> 4. O sistema habilida os campos para edição <br> 5. O usuário altera os campos desejados <br> 6. O usuário o confirma as alterações <br> 7. O sistema salva os dados cadastrados <br> 8. O sistema exibe a mensagem (Fluxo alternativo 1) | And more |
