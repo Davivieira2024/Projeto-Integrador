@@ -71,10 +71,11 @@ maior que a nota mínima para aprovação do curso. Um ***professor*** para faze
 | RNF006   | A interface deve ter navegação padronizada, assim como elementos visuais padronizados por guia de estilo  |Usuabilidade|
 | RNF007   | O sistema deve ficar disponível 99,9% do tempo |Confiabilidade|
 | RNF008   | O sistema deve ser capaz de lidar com altas demandas como datas para matrículas e rematrículas |Escalabilidade|
-| RNF009   | O sistema deve permitir que o usuário utilize a tecla <<ENTER>> para confimação dos dados  |Usuabilidade|
-| RNF010   | O sistema deve permitir que o usuário utilize a tecla <<TAB>> para mudar de campo  |Usuabilidade|
-| RNF010   | Após a confirmação dos dados cadastrados o cursor do mouse deve retornar para o campo inicial |Usuabilidade|
-| RNF011   | Os campos CNPJ/CPF devem conter formatação e validação   |Segurança|
+| RNF009   | O sistema deve permitir que o usuário utilize a tecla ***ENTER*** para confimação dos dados  |Usuabilidade|
+| RNF010   | O sistema deve permitir que o usuário utilize a tecla ***TAB*** para mudar de campo  |Usuabilidade|
+| RNF011   | Após a confirmação dos dados cadastrados o cursor do mouse deve retornar para o campo inicial |Usuabilidade|
+| RNF012   | Os campos CNPJ/CPF devem conter formatação e validação   |Segurança|
+
 ### Diagrama de caso de uso.
 ![](CasoDeUsoCadastroUsuarios.png)
 
