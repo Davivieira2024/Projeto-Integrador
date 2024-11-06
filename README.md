@@ -63,18 +63,18 @@ maior que a nota mínima para aprovação do curso. Um ***professor*** para faze
 ### Requisitos não funcionais e de qualidade do sistema.
 | Id     | Descrição | Categoria     | 
 | ----------- | ----------- |-----------| 
-| RNF001   | Ao efetuar o cadastro o sistema deve retornar uma mensagem informando para cadastro já existente  |Confiabilidade|
+| RNF001   | Caso o cadastro já tenha sido efetuado o sistema de retornar a mensagem "Já existe um cadastro com esse cpf/cnpj"   |Confiabilidade|
 | RNF002   | O Sistema não deve permitir acesso para usuário que não esteja logado  |Usuabilidade|
 | RNF003   | O sistema não deve aceitar dados do tipo texto em campo numérico |Usuabilidade|
 | RNF004   | Ao finalizar o cadastro o sistema deve retornar uma mensagem de confirmação  |Usuabilidade|
 | RNF005   | Todos os dados trafegados deverão ser encriptados |Segurança|
 | RNF006   | A interface deve ter navegação padronizada, assim como elementos visuais padronizados por guia de estilo  |Usuabilidade|
 | RNF007   | O sistema deve ficar disponível 99,9% do tempo |Confiabilidade|
-| RNF008   | O sistema deve ser capaz de lidar com altas demandas como datas para matrículas e rematrículas |Escalabilidade|
+| RNF008   | O sistema deve ser capaz de lidar com altas demandas como em datas para matrículas e rematrículas |Escalabilidade|
 | RNF009   | O sistema deve permitir que o usuário utilize a tecla ***ENTER*** para confimação dos dados  |Usuabilidade|
 | RNF010   | O sistema deve permitir que o usuário utilize a tecla ***TAB*** para mudar de campo  |Usuabilidade|
 | RNF011   | Após a confirmação dos dados cadastrados o cursor do mouse deve retornar para o campo inicial |Usuabilidade|
-| RNF012   | Os campos CNPJ/CPF devem conter formatação e validação   |Segurança|
+| RNF012   | Os campos CNPJ/CPF devem conter formatações e validações  |Segurança|
 
 ### Diagrama de caso de uso.
 ![](CasoDeUsoCadastroUsuarios.png)
