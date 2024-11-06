@@ -76,10 +76,13 @@ maior que a nota mínima para aprovação do curso. Um ***professor*** para faze
 | RNF011   | Após a confirmação dos dados cadastrados o cursor do mouse deve retornar para o campo inicial |Usuabilidade|
 | RNF012   | Os campos CNPJ/CPF devem conter formatações e validações  |Segurança|
 
-### Diagrama de caso de uso.
+### Diagrama De Caso De Uso.
 ![](CasoDeUsoCadastroUsuarios.png)
 
-### Diagrama de classe Uml
+### Diagrama De Classe Uml
 ![](DiagramaDeClasse.png)
+
+### Caso De Uso.
+
 
 1. test
