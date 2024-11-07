@@ -14,7 +14,7 @@ e com descrições objetivas.
 Como padrão de prioridade vamos utilizar as seguintes notações, ***essencial, importante e desejável.*** Esses padrões servirão para identificar o grão de importância para cada requisito a ser desenvolvido. ***Essencial*** vamos utilizar para identificar que sem esses requisitos o sistema não pode ser instalado ou a etapa seguinte do sistema dependerá desses requisitos. Os requisitos ***importantes*** fazem parte do sistema, mas podem ser implementados nas etapas seguintes sem comprometer a instalação do sistema. Os requisitos ***desejáveis*** são aqueles que não comprometem a funcionalidade do sistema, podem ser instalados posteriormente e garantem qualidade, usabilidade e desempenho. Também será utilizado a forma padrão Pf para pessoa física e Pj para pessoa jurídica.
 ### Descrição geral do sistema.
 O objetivo desse projeto é desenvolver um sistema para gestão educacional que
-disponibilize os seguintes requisitos ao usuários. No ***cadastro para empresa pessoa jurídica*** o administrador dever
+disponibilize os seguintes requisitos ao usuários. No ***cadastro para pessoa jurídica*** o administrador dever
 informar o ***cnpj, a inscrição estadual, a inscrição municipal e ramo de atividade*** da
 empresa. Uma empresa do ramo educacional possui várias filiais e essas filiais devem
 ser identificadas pelo ***código da unidade, descrições e o responsável pela unidade***.
@@ -40,7 +40,7 @@ turma***. Os seus dados pessoais devem estar previamente cadastrados no ***cadas
 pessoa física***. Durante o período de provas os alunos devem ***escolher as datas para suas avaliações***
 previamente. Os alunos para ***agendar suas avaliações*** devem informar ***nome da matéria a data da
 avaliação, horário e unidade***. A nota obtida deve ser igual ou
-maior que a nota mínima para aprovação do curso. Um ***professor*** para fazer parte do quadro de colaboradores deve estar ***cadastrado*** e, para realização do ***cadastro de professores*** o sistema deve solicitar o ***número do cpf, data da realização do cadastro, unidade desejada e formação acadêmica***.
+maior que a nota mínima para aprovação do curso. Um ***professor*** para fazer parte do quadro de colaboradores deve estar ***cadastrado*** e, para realização do ***cadastro de professores*** o sistema deve solicitar o ***número do cpf, Rg, data da realização do cadastro, unidade desejada e formação acadêmica***.
 
 ### Requisitos funcionais do sistema.
 
@@ -83,14 +83,62 @@ maior que a nota mínima para aprovação do curso. Um ***professor*** para faze
 ![](DiagramaDeClasse.png)
 
 ### Descrições dos casos de uso.
-| Nome do cenário: Cadastro de pessoa <br> Atores: <br> Pré-condição | [UC001] Cadastro <br> Cliente, Funcionario, Adm <br> Não está cadastrado |
-| :---        |          ---: |
-| ***Fluxo Principal***      |   |
-| 1. O Sistema exibe a tela de cadastro pessoa física <br> 2. O usuário digita o número do Cpf <br> 3. O usuário digita o número do Rg <br> 4. O usuário digita o nome <br> 5. O usuário digita o sobrenome <br> 6. O usuário digita o e-mail <br> 7. O usuário digita a data de nascimento <br> 8. O usuário seleciona o sexo <br>9. O usuário confirma os dados informados <br> 10. O sistema salva os dados <br> 11. O sistema exibe a mensagem (fluxo alternativo 1) ||
-| ***Fluxo Alternantivo 1 - Editar dados cadastrados***      | |
+| Nome do cenário: Cadastro de pessoa física <br> Atores: <br> Pré-condição | [UC001] Cadastro Pf <br> Cliente, Funcionario, Adm <br> Não está cadastrado |
+| :---        |          :---: |
+| ***Fluxo Principal*** | ***Fluxo de Exceção - Usuário não autenticado***   |
+| 1. O Sistema exibe a tela de cadastro pessoa física <br> 2. O usuário digita o número do Cpf <br> 3. O usuário digita o número do Rg <br> 4. O usuário digita o nome <br> 5. O usuário digita o sobrenome <br> 6. O usuário digita o e-mail <br> 7. O usuário digita a data de nascimento <br> 8. O usuário seleciona o sexo <br>9. O usuário confirma os dados informados <br> 10. O sistema salva os dados <br> 11. O sistema exibe a mensagem (fluxo alternativo 1) |1. O sistema detecta que o usuário não fez o login<br>2. O sistema exibe a tela de login/senha<br>3. O usuário digita o login e a senha<br>4. O sistema conecta o usuário na plataforma<br>5. O usuário é redirecionado para tela de cadastro|
+| ***Fluxo Alternantivo 1 - Editar dados cadastrados*** | |
 | 1. O Sistema exibe a tela de cadastro pessoa física <br> 2. O usuário digita o número do Cpf <br> 3. O sistema exibe a mensagem usuário já cadastrado <br> 4. O sistema carrega os dados do usuário na tela <br> 5. O sistema habilita os campos para edição <br> 6. O usuário confirma as alterações <br> 7. O sistema salva as alterações <br> 8. O sistema exibe a mensagem (Fluxo Alternativo – 1) |  |
 | ***Fluxo Alternantivo 2 - Dados inválidos***      |   |
-| 1. O Sistema exibe a tela de cadastro pessoa física <br> 2. O usuário digita o número do Cpf <br> 2. O sistema exibe a mensagem dados inválidos; <br> 3. O sistema retorna ao passo 2 do fluxo alternativo 1 <br>| And more |
+| 1. O Sistema exibe a tela de cadastro pessoa física <br> 2. O usuário digita o número do Cpf <br> 2. O sistema exibe a mensagem dados inválidos; <br> 3. O sistema retorna ao passo 2 do fluxo alternativo 1 <br>| |
 | ***Pós condições***      |   |
-| 1. O Sistema exibe os dados cadastrados com o número do registro <br> 2. O sistema envia os cadastro para impreessão | |
+| 1. O Sistema exibe os dados cadastrados com o número do registro <br> 2. O sistema envia o cadastro para impreessão | |
 
+
+----
+| Nome do cenário: Cadastro de pessoa jurídica <br> Atores: <br> Pré-condição | [UC002] Cadastro Pj<br> Cliente, Funcionario, Adm <br> Cadastrado [UC001], Autenticado |
+| :---        |          :---: |
+| ***Fluxo Principal*** | ***Fluxo de Exceção - Usuário não autenticado***   |
+| 1. O Sistema exibe a tela de cadastro pessoa Jurídica <br> 2. O usuário digita o número do Cnpj <br> 3. O usuário digita o número da inscrição Estadual <br> 4. O usuário digita o número da escrição municipal <br> 5. O usuário seleciona o ramo de atividade <br>9. O usuário confirma os dados informados <br> 10. O sistema salva os dados <br> 11. O sistema exibe a mensagem ("Dados alterados com sucesso") |1. O sistema detecta que o usuário não fez o login<br>2. O sistema exibe a tela de login/senha<br>3. O usuário digita o login e a senha<br>4. O sistema conecta o usuário na plataforma<br>5. O usuário é redirecionado para tela de cadastro|
+| ***Fluxo Alternantivo 1 - Editar dados cadastrados*** | |
+| 1. O Sistema exibe a tela de cadastro pessoa jurídica <br> 2. O usuário digita o número do Cnpj <br> 3. O sistema exibe a mensagem empresa já cadastrado <br> 4. O sistema carrega os dados da empresa na tela <br> 5. O sistema habilita os campos para edição <br> 6. O usuário confirma as alterações <br> 7. O sistema salva as alterações <br> 8. O sistema exibe a mensagem ("Dados alterados com sucesso") |  |
+| ***Fluxo Alternantivo 2 - Dados inválidos***      |   |
+| 1. O Sistema exibe a tela de cadastro pessoa jurídica <br> 2. O usuário digita o número do Cnpj <br> 2. O sistema exibe a mensagem dados inválidos <br> 3. O sistema retorna ao passo 2 do fluxo alternativo 1 <br>| |
+| ***Pós condições***      |   |
+| 1. O Sistema gera e exibe os dados cadastrados com o número do registro <br> 2. O sistema envia o cadastro para impreessão | |
+
+----
+| Nome do cenário: Cadastro de Professores <br> Atores: <br> Pré-condição | [UC003] Cadastro Pf/Pj <br> Professor, Funcionario, Adm <br>Cadastrado [UC001], Autenticado) |
+| :---        |          :---: |
+| ***Fluxo Principal*** | ***Fluxo de Exceção - Usuário não autenticado***   |
+| 1. O Sistema exibe a tela para cadastro de  Professores <br> 2. O Professor digita o número do cpf <br> 3. O Sistema exibe os dados cadastrais do professor (UC001 Cadastro Pf) <br> 4. O professor seleciona o tipo do cadastro (PF/PJ) <br> 5. O Professor seleciona a unidade <br>9. O Professor informa a formação acadêmica <br> 10. O Professor confirma os dados <br> 11. O sistema gera o número da matrícula <br> 12. O sistema salva o cadastro <br> 13. O sistema exibe a mensagem de confirmação|1. O sistema detecta que o usuário não fez o login<br>2. O sistema exibe a tela de login/senha<br>3. O usuário digita o login e a senha<br>4. O sistema conecta o usuário na plataforma<br>5. O usuário é redirecionado para tela de cadastro|
+| ***Fluxo Alternantivo 1 - Editar dados cadastrados*** | |
+| 1. O Sistema exibe a tela para cadastro de Professores <br> 2. O Professor digita o número do Cpf <br> 3. O sistema exibe a mensagem "dados já cadastrados" <br> 4. O sistema exibe os dados do cadastro <br> 5. O sistema habilita os campos para edição <br> 6. O Professor confirma as alterações <br> 7. O sistema salva as alterações <br> 8. O sistema exibe a mensagem de confirmação|  |
+| ***Fluxo Alternantivo 2 - Dados inválidos***      |   |
+| 1. O Sistema exibe o cadastro de Professores <br> 2. O Professor digita o número do Cpf <br> 2. O sistema exibe a mensagem dados inválidos <br> 3. O sistema retorna ao passo 2 do fluxo alternativo 1 <br>| |
+| ***Pós condições***      |   |
+| 1. O Sistema exibe os dados cadastrais e o número da matrícula <br> 2. O sistema envia o cadastro para impreessão | |
+
+----
+| Nome do cenário: Cadastro para fornecedores <br> Atores: <br> Pré-condição | [UC004] Cadastro Pf/Pj <br> Fornecedor, Funcionario, Adm <br>Cadastrado [UC001], Autenticado) |
+| :---        |          :---: |
+| ***Fluxo Principal*** | ***Fluxo de Exceção - Usuário não autenticado***   |
+| 1. O Sistema exibe o cadastro para Fornecedores <br> 2. O Fornecedor digita o número do cpf <br> 3. O Sistema exibe os dados cadastrais do fornecedor (UC001 Cadastro Pf) <br> 4. O Fornecedor seleciona o tipo do cadastro (PF/PJ) <br> 5. O Fornecedor digita o número do Cnpj<br>6. O Fornecedor digita o número da Inscrição estadual <br> 7. O Fornecedor digita o número da inscrição municipal <br> 8. O Fornecedor seleciona o ramo de atividade <br> 9. O Fornecedor seleciona os produtos<br> 10. O Fornecedor confirma as informações<br>11. O sistema gera o número da matrícula <br> 12. O sistema salva as informações<br>13. O Sistema exibe o cadastro para impressão |1. O Sistema detecta que o usuário não fez o login<br>2. O Sistema exibe a tela para login/senha<br>3. O Fornecedor digita o login e a senha<br>4. O sistema conecta o usuário na plataforma<br>5. O Fornecedor é redirecionado para tela de cadastro|
+| ***Fluxo Alternantivo 1 - Editar dados cadastrados*** | |
+| 1. O Sistema exibe o cadastro para fornecedores <br> 2. O Fornecedor digita o número do Cpf <br> 3. O sistema exibe a mensagem dados já cadastrados <br> 4. O sistema carrega os dados do Fornecedor na tela <br> 5. O sistema habilita os campos para edição <br> 6. O Fornecedor confirma as alterações <br> 7. O sistema salva as alterações <br> 8. O sistema exibe a mensagem  de confirmação|  |
+| ***Fluxo Alternantivo 2 - Dados inválidos***      |   |
+| 1. O Sistema exibe a tela para cadastro de fornecedores <br> 2. O Fornecedor digita o número do Cpf <br> 2. O sistema exibe a mensagem dados inválidos <br> 3. O sistema retorna ao passo 2 do fluxo alternativo 1 <br>| |
+| ***Pós condições***      |   |
+| 1. O Sistema exibe os dados cadastrais e o número da matrícula <br> 2. O sistema envia o cadastro para impreessão | |
+
+----
+| Nome do cenário: Cadastro para Alunos <br> Atores: <br> Pré-condição | [UC005] Cadastro Alunos <br> Aluno, Funcionario, Adm <br>Cadastrado [UC001], Autenticado) |
+| :---        |          :---: |
+| ***Fluxo Principal*** | ***Fluxo de Exceção - Usuário não autenticado***   |
+| 1. O Sistema exibe a tela para cadastro de alunos <br> 2. O Aluno digita o número do cpf <br> 3. O Sistema exibe os dados cadastrais do aluno (UC001 Cadastro Pf) <br> 4. O Aluno seleciona o a unidade <br> 5. O Aluno seleciona o curso<br>6.Aluno seleciona o período <br> 7. O Aluno seleciona a forma de pagamento <br> 8. O Aluno seleciona o número de parcelas <br> 9. O sistema envia uma mensagem de confirmação para o e-mail cadastrado <br> 10. O aluno confirma o cadastro<br>11. O Sistema gera o número da matrícula <br> 12. O sistema salva as informações<br>13. O Sistema exibe o cadastro para impressão |1. O Sistema detecta que o usuário não fez o login<br>2. O Sistema exibe a tela para login/senha<br>3. O Fornecedor digita o login e a senha<br>4. O sistema conecta o usuário na plataforma<br>5. O Fornecedor é redirecionado para tela de cadastro|
+| ***Fluxo Alternantivo 1 - Editar dados cadastrados*** | |
+| 1. O Sistema exibe o cadastro para fornecedores <br> 2. O Fornecedor digita o número do Cpf <br> 3. O sistema exibe a mensagem dados já cadastrados <br> 4. O sistema carrega os dados do Fornecedor na tela <br> 5. O sistema habilita os campos para edição <br> 6. O Fornecedor confirma as alterações <br> 7. O sistema salva as alterações <br> 8. O sistema exibe a mensagem  de confirmação|  |
+| ***Fluxo Alternantivo 2 - Dados inválidos***      |   |
+| 1. O Sistema exibe a tela para cadastro de fornecedores <br> 2. O Fornecedor digita o número do Cpf <br> 2. O sistema exibe a mensagem dados inválidos <br> 3. O sistema retorna ao passo 2 do fluxo alternativo 1 <br>| |
+| ***Pós condições***      |   |
+| 1. O Sistema exibe os dados cadastrais e o número da matrícula <br> 2. O sistema envia o cadastro para impreessão | |
