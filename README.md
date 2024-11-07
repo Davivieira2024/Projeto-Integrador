@@ -86,6 +86,11 @@ maior que a nota mínima para aprovação do curso. Um ***professor*** para faze
 | Nome do cenário: Cadastro de pessoa <br> Atores: <br> Pré-condição | [UC001] Cadastro <br> Cliente, Funcionario, Adm <br> Não está cadastrado |
 | :---        |          ---: |
 | ***Fluxo Principal***      |   |
-| 1. O Sistema exibe a tela de cadastro pessoa física <br> 2. O usuário digita o número do Cpf <br> 3. O usuário digita o número do Rg <br> 4. O usuário digita o nome <br> 5. O usuário digita o sobrenome <br> 6. O usuário digita o e-mail <br> 7. O usuário digita a data de nascimento <br> 8. 8. O usuário seleciona o sexo <br>9. 9. O usuário confirma os dados informados <br> 10. O sistema salva os dados <br> 11. O sistema exibe a mensagem (fluxo alternativo 1) | And more |
-| ***Fluxo Alternantivo - Editar dados cadastrados***      |   |
-| 1. O Sistema exibe a tela de cadastro pessoa física <br> 2. O usuário digita o número do Cpf <br> 3. O sistema exibe os dados cadastrados <br> 4. O sistema habilida os campos para edição <br> 5. O usuário altera os campos desejados <br> 6. O usuário o confirma as alterações <br> 7. O sistema salva os dados cadastrados <br> 8. O sistema exibe a mensagem (Fluxo alternativo 1) | And more |
+| 1. O Sistema exibe a tela de cadastro pessoa física <br> 2. O usuário digita o número do Cpf <br> 3. O usuário digita o número do Rg <br> 4. O usuário digita o nome <br> 5. O usuário digita o sobrenome <br> 6. O usuário digita o e-mail <br> 7. O usuário digita a data de nascimento <br> 8. O usuário seleciona o sexo <br>9. O usuário confirma os dados informados <br> 10. O sistema salva os dados <br> 11. O sistema exibe a mensagem (fluxo alternativo 1) ||
+| ***Fluxo Alternantivo 1 - Editar dados cadastrados***      | |
+| 1. O Sistema exibe a tela de cadastro pessoa física <br> 2. O usuário digita o número do Cpf <br> 3. O sistema exibe a mensagem usuário já cadastrado <br> 4. O sistema carrega os dados do usuário na tela <br> 5. O sistema habilita os campos para edição <br> 6. O usuário confirma as alterações <br> 7. O sistema salva as alterações <br> 8. O sistema exibe a mensagem (Fluxo Alternativo – 1) |  |
+| ***Fluxo Alternantivo 2 - Dados inválidos***      |   |
+| 1. O Sistema exibe a tela de cadastro pessoa física <br> 2. O usuário digita o número do Cpf <br> 2. O sistema exibe a mensagem dados inválidos; <br> 3. O sistema retorna ao passo 2 do fluxo alternativo 1 <br>| And more |
+| ***Pós condições***      |   |
+| 1. O Sistema exibe os dados cadastrados com o número do registro <br> 2. O sistema envia os cadastro para impreessão | |
+
