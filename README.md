@@ -130,15 +130,15 @@ maior que a nota mínima para aprovação do curso. Um ***professor*** para faze
 | 1. O Sistema exibe os dados cadastrais e o número da matrícula <br> 2. O sistema envia o cadastro para impreessão | |
 
 ----
-| Nome do cenário: Cadastro para Alunos <br> Atores: <br> Pré-condição: | [UC005] Cadastro Alunos <br> Aluno, Funcionario, Adm <br>Cadastrado [UC001], Autenticado) |
+| Nome do cenário: Cadastro para Alunos <br> Atores: <br> Pré-condição: | [UC005] Cadastro <br> Aluno, Funcionario, Adm <br>Cadastrado [UC001], Autenticado) |
 | :--- | :---: |
 | ***Fluxo Principal*** | ***Fluxo de Exceção - Usuário não autenticado***   |
-| 1. O Sistema exibe a tela para cadastro de alunos <br> 2. O Aluno digita o número do cpf <br> 3. O Sistema exibe os dados cadastrais do aluno (UC001 Cadastro Pf) <br> 4. O Aluno seleciona o a unidade <br> 5. O Aluno seleciona o curso<br>6.Aluno seleciona o período <br> 7. O Aluno seleciona a forma de pagamento <br> 8. O Aluno seleciona o número de parcelas <br> 9. O sistema envia uma mensagem de confirmação para o e-mail cadastrado <br> 10. O aluno confirma o cadastro<br>11. O Sistema gera o número da matrícula <br> 12. O sistema salva as informações<br>13. O Sistema exibe o cadastro para impressão |1. O Sistema detecta que o usuário não fez o login<br>2. O Sistema exibe a tela para login/senha<br>3. O Fornecedor digita o login e a senha<br>4. O sistema conecta o usuário na plataforma<br>5. O Fornecedor é redirecionado para tela de cadastro|
+| 1. O Sistema exibe a tela para cadastro de alunos <br> 2. O Aluno digita o número do cpf <br> 3. O Sistema exibe os dados cadastrais do aluno (UC001 Cadastro Pf) <br> 4. O Aluno seleciona o a unidade <br> 5. O Aluno seleciona o curso desejado <br>6. O Aluno seleciona o período <br> 7. O Aluno seleciona a forma de pagamento <br> 8. O Aluno seleciona o número de parcelas <br> 9. O sistema envia uma mensagem de confirmação para o e-mail cadastrado <br> 10. O aluno confirma o cadastro<br>11. O Sistema gera o número da matrícula <br> 12. O sistema salva as informações<br>13. O Sistema exibe o cadastro para impressão |1. O Sistema detecta que o usuário não fez o login<br>2. O Sistema exibe a tela para login/senha<br>3. O Fornecedor digita o login e a senha<br>4. O sistema conecta o usuário na plataforma<br>5. O Aluno é redirecionado para tela de cadastro|
 | ***Fluxo Alternantivo 1 - Editar dados cadastrados*** | |
-| 1. O Sistema exibe o cadastro para fornecedores <br> 2. O Fornecedor digita o número do Cpf <br> 3. O sistema exibe a mensagem dados já cadastrados <br> 4. O sistema carrega os dados do fornecedor na tela <br> 5. O sistema habilita os campos para edição <br> 6. O Fornecedor confirma as alterações <br> 7. O sistema salva as alterações <br> 8. O sistema exibe a mensagem  de confirmação|  |
+| 1. O Sistema exibe a tela de cadastro para alunos <br> 2. O Aluno digita o número do Cpf <br> 3. O sistema exibe a mensagem dados já cadastrados <br> 4. O sistema carrega os dados do fornecedor na tela <br> 5. O sistema habilita os campos para edição <br> 6. O Aluno confirma as alterações <br> 7. O sistema salva as alterações <br> 8. O sistema exibe a mensagem  de confirmação|  |
 | ***Fluxo Alternantivo 2 - Dados inválidos*** |   |
-| 1. O Sistema exibe a tela para cadastro de fornecedores <br> 2. O Fornecedor digita o número do Cpf <br> 2. O sistema exibe a mensagem dados inválidos <br> 3. O sistema retorna ao passo 2 do fluxo alternativo 1 <br>| |
+| 1. O Sistema exibe a tela para cadastro de aluno <br> 2. O Aluno digita o número do Cpf <br> 2. O sistema exibe a mensagem dados inválidos <br> 3. O sistema retorna ao passo 2 do fluxo alternativo 1 <br>| |
 | ***Pós-condição*** |   |
-| 1. O Sistema exibe os dados cadastrais e o número da matrícula <br> 2. O sistema envia o cadastro para impreessão <br> 3. O sistema envia uma mensagem para o e-mail cadastrado | |
+| 1. O Sistema exibe os dados cadastrais e o número da matrícula <br> 2. O sistema envia o cadastro para impreessão <br> 3. O sistema envia uma mensagem de boas vindas para o e-mail cadastrado | |
 
 ### Prototipação.
