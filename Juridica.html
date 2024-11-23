@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+
+<style>
+	.margem{
+        
+		border:thin #993300 solid;
+		padding: 5px;
+		width: 680px;
+		margin: 5px;
+        
+	}
+
+    body{
+        background-color: beige;
+        font-family: sans-serif;
+        font-size: 1em;
+        color:black;
+        margin-left: 36%;
+        margin-top: 2%;
+        justify-content: center;
+    }
+    .campo{
+        
+        margin-bottom: 1em;
+    }
+
+    .campo, label{
+        margin-bottom: 0.2em;
+        color: black;
+        display: block;
+        width: 300px;
+
+    }
+
+    input,select,textarea,button{
+        border-radius: 4px;
+        
+    }
+    
+    .grupo{
+        float: left;
+        width: auto;
+        margin-right: 10px;
+    }
+    
+    .selecao{
+        width: 98.1%;
+    }
+
+</style>
+<script>
+    
+</script>    
+</head>
+
+<body>
+    
+    <h2>Cadastro pessoa jurídica</h2>
+    <form action="" method="post" name="cadastro" id="cadastro">
+        <div class="margem">
+            <fieldset>
+                <div class="grupo">
+                    <label for="cnpj">Cnpj</label>
+                    <input type="text" name="cnpj"  class="campo" id="cnpj">
+                </div>
+                <div class="grupo">
+                    <Label for="ie">Inscrição Estadual</Label>
+                    <input type="text" name="ie" class="campo" id="ie">
+                </div>
+                <div class="grupo">
+                   <Label for="empresa">Nome da empresa</Label>
+                   <input type="text" name="empresa" class="campo" id="empresa">
+                </div>
+                <div class="grupo">
+                    <label for="dataFund">Data da fundação</label>
+                    <input type="date" name="dataFund" class="campo" id="dataFund">
+                </div>
+                <div class="grupo">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" class="campo" id="email">
+                </div>
+                <div class="grupo">
+                    <label for="cep">Cep</label>
+                    <input type="text" name="cep" class="campo" id="cep">
+                </div>
+                <div class="grupo">
+                    <label for="rua">Rua</label>
+                    <input type="text" name="rua" class="campo" id="rua">
+                </div>
+                <div class="grupo">
+                    <label for="bairro">Bairro</label>
+                    <input type="text" name="bairro" class="campo" id="bairro">
+                </div>
+                <div class="grupo">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" name="cidade" class="campo" id="cidade">
+                </div>
+
+                <div class="grupo">
+                    <label for="estado">Estado</label>
+                    <input type="text" name="estado" class="campo" id="estado">
+                </div>
+                
+                <div class="grupo">
+                    <Label for="pais">País</Label>
+                    <input type="text" name="pais" class="campo" id="pais">
+                </div>
+                
+            </fieldset>
+            
+            <fieldset>
+                <div class="grupo">
+                    <Label for="senha">Digite sua senha</Label>
+                    <input type="password" name="senha" class="campo" id="senha">
+                </div>
+                <div class="grupo">
+                    <Label for="senha">Digite novamente sua senha</Label>
+                    <input type="text" name="senha" class="campo" id="senha">
+                </div>
+                
+            </fieldset>
+        </div>
+            &nbsp;&nbsp;<input name="enviar" id="enviar" type="button" value="Salvar">
+            &nbsp;&nbsp;<input name="consultar" id="consultar" type="button" value="Consultar">
+            &nbsp;&nbsp;<input name="editar" id="editar" type="button" value="Editar">
+            &nbsp;&nbsp;<input name="excluir" id="excluir" type="button" value="Excluir">
+    </form> 
+
+</body>
+</html>
