@@ -140,5 +140,9 @@ maior que a nota mínima para aprovação do curso. Um ***professor*** para faze
 | 1. O Sistema exibe a tela para cadastro de aluno <br> 2. O Aluno digita o número do Cpf <br> 2. O sistema exibe a mensagem dados inválidos <br> 3. O sistema retorna ao passo 2 do fluxo alternativo 1 <br>| |
 | ***Pós-condição*** |   |
 | 1. O Sistema exibe os dados cadastrais e o número da matrícula <br> 2. O sistema envia o cadastro para impreessão <br> 3. O sistema envia uma mensagem de boas vindas para o e-mail cadastrado | |
-
+----
 ### Prototipação.
+
+
+
+
