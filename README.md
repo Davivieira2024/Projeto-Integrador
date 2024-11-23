@@ -142,7 +142,8 @@ maior que a nota mínima para aprovação do curso. Um ***professor*** para faze
 | 1. O Sistema exibe os dados cadastrais e o número da matrícula <br> 2. O sistema envia o cadastro para impreessão <br> 3. O sistema envia uma mensagem de boas vindas para o e-mail cadastrado | |
 ----
 ### Prototipação.
-
+### Cadastro de pessoa física
+![]()
 
 
 
