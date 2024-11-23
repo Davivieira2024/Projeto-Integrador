@@ -2,16 +2,16 @@
 ### Sistema de Gestão Para Universidade
 ### Versão 2.0 (Segunda Versão)
 ---
-### 1.  Introdução.
+### 1.0  Introdução.
 Esse sistema é voltado para empresas que pretedem atuar no ramo educacional e  integrar todos os setores, desde a portaria até aplicações de avaliações em todas as unidades e para todos os cursos oferecidos. Disponibiliza também aos gestores informações relevantes para auxiliá-los na sua tomada de decisão. Pensado para atuar em plataforma web, permite aos usuários o uso em desktop e dispositivos móveis android.
-### 2.  Convenções e abreviações.
+### 2.0  Convenções e abreviações.
 UC ; UML; RF; RNF; PF; PJ.
-### 3.  Identificação dos requisitos.
+### 3.0  Identificação dos requisitos.
 Serão utilizados como identificador dos requisitos a forma padão, UC001 para caso de uso, RF001 para
 requisitos funcionais e RNF001 para requisitos não funcionais, PF para pessoa física e PJ para pessoa jurídica.
-### 4.  Identificação dos requisitos.
+### 4.0  Identificação dos requisitos.
 Como padrão de prioridade vamos utilizar as seguintes notações, ***essencial, importante e desejável.*** Esses padrões servirão para identificar o grão de importância para cada requisito a ser desenvolvido. ***Essencial*** vamos utilizar para identificar que sem esses requisitos o sistema não pode ser instalado ou a etapa seguinte do sistema dependerá desses requisitos. Os requisitos ***importantes*** fazem parte do sistema, mas podem ser implementados nas etapas seguintes sem comprometer a instalação do sistema. Os requisitos ***desejáveis*** são aqueles que não comprometem a funcionalidade do sistema, podem ser instalados posteriormente e garantem qualidade, usabilidade e desempenho. 
-### 5.  Descrição geral do sistema (Conceitual).
+### 5.0  Descrição geral do sistema (Conceitual).
 O objetivo desse projeto é desenvolver um sistema para gestão educacional que
 disponibilize os seguintes requisitos aos usuários. No ***cadastro para pessoa jurídica*** o administrador dever
 informar o ***cnpj, a inscrição estadual, a inscrição municipal e ramo de atividade*** da
@@ -41,7 +41,7 @@ previamente. Os alunos para ***agendar suas avaliações*** devem informar ***no
 avaliação, horário e unidade***. A nota obtida deve ser igual ou
 maior que a nota mínima para aprovação do curso. Um ***professor*** para fazer parte do quadro de colaboradores deve estar ***cadastrado*** e, para realização do ***cadastro de professores*** o sistema deve solicitar o ***número do cpf, Rg, data da realização do cadastro, unidade desejada e formação acadêmica***.
 
-### 6. Requisitos funcionais do sistema.
+### 6.0 Requisitos funcionais do sistema.
 
 | Id          | Descrição   | Prioridade | 
 | ----------- | ----------- |----------- | 
@@ -75,13 +75,14 @@ maior que a nota mínima para aprovação do curso. Um ***professor*** para faze
 | RNF011   | Após a confirmação dos dados cadastrados o cursor do mouse deve retornar para o campo inicial |Usuabilidade|
 | RNF012   | Os campos CNPJ/CPF devem conter formatações e validações  |Segurança|
 
-### 7.  Diagrama de caso de uso.
+### 7.0  Diagrama de caso de uso.
 ![](CasoDeUsoCadastroUsuarios.png)
 
-### 8. Diagrama de classe UML
+### 8.0 Diagrama de classe UML
 ![](DiagramaDeClasse.png)
 
-### 9.  Descrições dos casos de uso.
+### 9.0  Descrições dos casos de uso.
+#### 9.1  Cadastro Pessoa Física.
 | Nome do cenário: Cadastro de pessoa física <br> Atores: <br> Pré-condição | [UC001] Cadastro Pf <br> Cliente, Funcionario, Adm <br> Não está cadastrado |
 | :---        |          :---: |
 | ***Fluxo Principal*** | ***Fluxo de Exceção - Usuário não autenticado***   |
@@ -94,6 +95,7 @@ maior que a nota mínima para aprovação do curso. Um ***professor*** para faze
 | 1. O Sistema exibe os dados cadastrados com o número do registro <br> 2. O sistema envia o cadastro para impreessão | |
 
 ----
+#### 9.2  Cadastro Pessoa Jurídica.
 | Nome do cenário: Cadastro de pessoa jurídica <br> Atores: <br> Pré-condição: | [UC002] Cadastro Pj<br> Cliente, Funcionario, Adm <br> Cadastrado [UC001], Autenticado |
 | :---        |          :---: |
 | ***Fluxo Principal*** | ***Fluxo de Exceção - Usuário não autenticado***   |
@@ -106,6 +108,7 @@ maior que a nota mínima para aprovação do curso. Um ***professor*** para faze
 | 1. O Sistema gera e exibe os dados cadastrados com o número do registro <br> 2. O sistema envia o cadastro para impreessão | |
 
 ----
+#### 9.3  Cadastro De Professores.
 | Nome do cenário: Cadastro de Professores <br> Atores: <br> Pré-condição: | [UC003] Cadastro Pf/Pj <br> Professor, Funcionario, Adm <br>Cadastrado [UC001], Autenticado) |
 | :---        |          :---: |
 | ***Fluxo Principal*** | ***Fluxo de Exceção - Usuário não autenticado***   |
@@ -118,6 +121,7 @@ maior que a nota mínima para aprovação do curso. Um ***professor*** para faze
 | 1. O Sistema exibe os dados cadastrais e o número da matrícula <br> 2. O sistema envia o cadastro para impreessão | |
 
 ----
+#### 9.4  Cadastro De Fornecedores.
 | Nome do cenário: Cadastro para fornecedores <br> Atores: <br> Pré-condição: | [UC004] Cadastro Pf/Pj <br> Fornecedor, Funcionario, Adm <br>Cadastrado [UC001], Autenticado) |
 | :---        |          :---: |
 | ***Fluxo Principal*** | ***Fluxo de Exceção - Usuário não autenticado***   |
@@ -130,6 +134,7 @@ maior que a nota mínima para aprovação do curso. Um ***professor*** para faze
 | 1. O Sistema exibe os dados cadastrais e o número da matrícula <br> 2. O sistema envia o cadastro para impreessão | |
 
 ----
+#### 9.5  Cadastro De Alunos.
 | Nome do cenário: Cadastro para Alunos <br> Atores: <br> Pré-condição: | [UC005] Cadastro <br> Aluno, Funcionario, Adm <br>Cadastrado [UC001], Autenticado) |
 | :--- | :---: |
 | ***Fluxo Principal*** | ***Fluxo de Exceção - Usuário não autenticado***   |
@@ -141,8 +146,19 @@ maior que a nota mínima para aprovação do curso. Um ***professor*** para faze
 | ***Pós-condição*** |   |
 | 1. O Sistema exibe os dados cadastrais e o número da matrícula <br> 2. O sistema envia o cadastro para impreessão <br> 3. O sistema envia uma mensagem de boas vindas para o e-mail cadastrado | |
 ----
-### Prototipação.
+### 10.0  Prototipação.
+####  10.1  Cadastro Pessoa Física.
 ![](Física.png)
-
-
-
+----
+####  10.2  Cadastro Pessoa Jurídica.
+![](Jurídica.png)
+----
+####  10.3  Cadastro Pessoa Professores.
+![](Professor.png)
+----
+####  10.4  Cadastro Pessoa Alunos.
+![](Aluno.png)
+----
+####  10.4  Cadastro Pessoa Fornecedores.
+![](Fornecedor.png)
+----
