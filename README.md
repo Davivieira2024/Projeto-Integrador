@@ -43,7 +43,7 @@ maior que a nota mínima para aprovação do curso. Um ***professor*** para faze
 
 ### 6.0 Requisitos funcionais do sistema.
 
-| Id          | Descrição   | Prioridade | 
+| Ref | Descrição   | Prioridade | 
 | ----------- | ----------- |----------- | 
 | RF001   | O sistema deve fornecer um formulário para cadastro de pessoa física  |Essecial|
 | RF002   | O sistema deve fornecer um formulário para cadastro de pessoa jurídica  |Essecial|
@@ -60,7 +60,7 @@ maior que a nota mínima para aprovação do curso. Um ***professor*** para faze
 | RF013   | O sistema deve fornecer um formulário para cadastro de matrículas |Importante|
 
 ### 6.1  Requisitos não funcionais e de qualidade do sistema.
-| Id     | Descrição | Categoria     | 
+| Ref     | Descrição | Categoria     | 
 | ----------- | ----------- |-----------| 
 | RNF001   | O Sistema não deve permitir cadastro com duplicidade  |Confiabilidade|
 | RNF002   | O Sistema não deve permitir acesso para usuário que não esteja logado  |Usuabilidade|
