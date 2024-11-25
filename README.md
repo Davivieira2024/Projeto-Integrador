@@ -57,7 +57,7 @@ maior que a nota mínima para aprovação do curso. Um ***professor*** para faze
 | RF010   | O sistema deve fornecer um formulário para cadastro dos cursos  |Importante|
 | RF011   | O sistema deve fornecer um formulário para cadastro das unidades  |Importante|
 | RF012   | O sistema deve fornecer um formulário para cadastro das disciplinas |Importante|
-| RF013   | O sistema deve fornecer um formulário para cadastro de matrículas |Importante|
+| RF013   | O sistema deve fornecer um formulário para efetuar a matrícula |Importante|
 
 ### 6.1  Requisitos não funcionais e de qualidade do sistema.
 | Ref     | Descrição | Categoria     | 
@@ -74,6 +74,7 @@ maior que a nota mínima para aprovação do curso. Um ***professor*** para faze
 | RNF010   | O sistema deve permitir que o usuário utilize a tecla ***TAB*** para mudar de campo  |Usuabilidade|
 | RNF011   | Após a confirmação dos dados cadastrados o cursor do mouse deve retornar para o campo inicial |Usuabilidade|
 | RNF012   | Os campos CNPJ/CPF devem conter formatações e validações  |Segurança|
+| RNF013   | Para os cadastros ***Pj, professores, fornecedores e alunos***, o sistema de solicitar o cadastro ***Pf*** |Segurança|
 
 ### 7.0  Diagrama de caso de uso.
 ![](CasoDeUsoCadastroUsuarios.png)
