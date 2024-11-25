@@ -13,7 +13,7 @@ requisitos funcionais e RNF001 para requisitos não funcionais, PF para pessoa f
 Como padrão de prioridade vamos utilizar as seguintes notações, ***essencial, importante e desejável.*** Esses padrões servirão para identificar o grão de importância para cada requisito a ser desenvolvido. ***Essencial*** vamos utilizar para identificar que sem esses requisitos o sistema não pode ser instalado ou a etapa seguinte do sistema dependerá desses requisitos. Os requisitos ***importantes*** fazem parte do sistema, mas podem ser implementados nas etapas seguintes sem comprometer a instalação do sistema. Os requisitos ***desejáveis*** são aqueles que não comprometem a funcionalidade do sistema, podem ser instalados posteriormente e garantem qualidade, usabilidade e desempenho. 
 ### 5.0  Descrição geral do sistema (Conceitual).
 O objetivo desse projeto é desenvolver um sistema para gestão educacional que
-disponibilize os seguintes requisitos aos usuários. No ***cadastro para pessoa jurídica*** o administrador dever
+disponibilize aos seus usuários os seguintes; No ***cadastro para pessoa jurídica*** o administrador dever
 informar o ***cnpj, a inscrição estadual, a inscrição municipal e ramo de atividade*** da
 empresa. Uma empresa do ramo educacional possui várias filiais e essas filiais devem
 ser identificadas pelo ***código da unidade, descrições e o responsável pela unidade***.
