@@ -154,12 +154,12 @@ maior que a nota mínima para aprovação do curso. Um ***professor*** para faze
 ####  10.2  Cadastro Pessoa Jurídica.
 ![](Jurídica.png)
 ----
-####  10.3  Cadastro Pessoa Professores.
+####  10.3  Cadastro para Professores.
 ![](Professor.png)
 ----
-####  10.4  Cadastro Pessoa Alunos.
+####  10.4  Cadastro para Alunos.
 ![](Aluno.png)
 ----
-####  10.4  Cadastro Pessoa Fornecedores.
+####  10.4  Cadastro para Fornecedores.
 ![](Fornecedor.png)
 ----
